@@ -10,7 +10,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:id="@+id/iv1"
-        android:src="@drawable/SocietyHubIcon"
+        android:src="@drawable/society_hub_icon"
         android:layout_gravity="center"
         />
     <TextView
@@ -40,8 +40,8 @@
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="221dp"
-            android:layout_height="43dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="2"
             app:startIconDrawable="@drawable/ic_baseline_person_24">
 
@@ -59,10 +59,11 @@
             app:startIconDrawable="@drawable/ic_baseline_person_24">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_lname"
+                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:layout_height="38dp"
-                android:hint="Last Name" />
+                android:id="@+id/et_lname"
+                android:hint="Last Name"
+                />
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
     <com.google.android.material.textfield.TextInputLayout

@@ -1,11 +1,18 @@
 package com.example.societyhub
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
+import com.example.societyhub.databinding.ActivitySocietyInformationBinding
 
 class Society_Information : AppCompatActivity() {
+    lateinit var viewBinding:ActivitySocietyInformationBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_society__information)
+        viewBinding= ActivitySocietyInformationBinding.inflate(LayoutInflater.from(this))
+        setContentView(viewBinding.root)
+        viewBinding.tvHouseNumberSociety.setText(intent.getStringExtra("house"))
+        viewBinding.tvSocietyNameSociety.setText((intent.getStringExtra("society_name")))
+        viewBinding.tvAddressSociety.setText(intent.getStringExtra("address"))
     }
 }

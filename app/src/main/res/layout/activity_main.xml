@@ -11,7 +11,7 @@
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_gravity="center"
-        android:src="@drawable/SocietyHubIcon"
+        android:src="@drawable/society_hub_icon"
         />
     <TextView
         android:layout_width="match_parent"
